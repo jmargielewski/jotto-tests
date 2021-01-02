@@ -1,13 +1,8 @@
 import PropTypes from 'prop-types';
 
-/**
- * Functional react component for congratulatory message.
- * @function
- * @returns {JSX.Element} - Rendered component
- */
 const Congrats = ({ success }) =>
   success ? (
-    <div data-test="component-congrats">
+    <div data-test="component-congrats" className="alert alert-success">
       <span data-test="congrats-message">Congratulations! You gussed the word!</span>
     </div>
   ) : (
