@@ -1,7 +1,6 @@
 import Congrats from './Congrats';
 import GuessedWords from './GuessedWords';
-
-import './App.css';
+import Input from '../components/Input';
 
 const App = () => {
   const guessedWords = [
@@ -12,6 +11,7 @@ const App = () => {
   return (
     <div className="container">
       <h1>Jotto</h1>
+      <Input />
       <Congrats success={true} />
       <GuessedWords guessedWords={guessedWords} />
     </div>
